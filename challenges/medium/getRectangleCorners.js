@@ -6,26 +6,26 @@
  * @param {number} point.x - the x coordinate
  * @param {number} point.y - the y coordinate
  * @returns {Object[]} the corners
-*/
+ */
 
-function getRectangleCorners (a, b, point) {
+function getRectangleCorners(a, b, point) {
   // get the bottom right point
   const point1 = {
     x: point.x + a,
-    y: point.y
-  }
+    y: point.y,
+  };
   // then the top right
   const point2 = {
-    x: point1.x + a,
-    y: point1.y + b
-  }
+    x: point1.x,
+    y: point1.y + b,
+  };
   // then the top left
   const point3 = {
-    x: point1.x,
-    y: point2.y - b
-  }
+    x: point.x,
+    y: point.y + b,
+  };
   // and return them as an array of points
-  return [point3, point2, point1, point]
+  return [point3, point2, point1, point];
 }
 
-module.exports = getRectangleCorners
+module.exports = getRectangleCorners;
