@@ -8,11 +8,10 @@
 
 function rectangleAreaFromCoords(points) {
   [A, B, C, D] = points;
-  // return (A.x - B.x)*(C.y - D.y)
+  // return (A.x - B.x) * (C.y - D.y);
   return (B.x - A.x) * (D.y - C.y);
 }
 
 module.exports = rectangleAreaFromCoords;
 
 //come back
-  
