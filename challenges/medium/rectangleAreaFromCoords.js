@@ -9,7 +9,9 @@
 function rectangleAreaFromCoords(points) {
   [A, B, C, D] = points;
   // return (A.x - B.x) * (C.y - D.y);
-  return (B.x - A.x) * (D.y - C.y);
+  // return (B.x - A.x) * (D.y - C.y);
+  // return (C.x - A.x) * (D.y - C.y);
+  return (C.x - A.x) * (D.y - A.y);
 }
 
 module.exports = rectangleAreaFromCoords;
